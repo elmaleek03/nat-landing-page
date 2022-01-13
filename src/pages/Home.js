@@ -10,6 +10,9 @@ import ft1 from '../assets/ft1.gif';
 import ft2 from '../assets/ft2.gif';
 import ft3 from '../assets/ft3.gif';
 
+import webinarImage from '../assets/webinars.png';
+import avatarImage from '../assets/avatar.jpg';
+
 
 export default function Home() {
 
@@ -20,30 +23,31 @@ export default function Home() {
             <div className="hero">
                 <h1><b>Nutrition Amazing Team</b></h1>
                 <h2>Nutrition Amazing Team dahulunya adalah organisasi yang bekerjasama dengan salah satu LSM Sumbar, dengan tujuan melakukan sosialisasi kesehatan ke masyarakat, pengecekan kesehatan, training kelas Public Speaking dan penyelenggaraan seminar kesehatan.</h2>
-                <h3>Informasi Webinar Terkini</h3>
-                <a href="#form"><button id="call-to-action"><b>Join Sekarang!</b></button></a>
-                <p>There are currently {waitListMembers} bloggers on the waitlist. 🎉</p>
-                {/* <p>You're early! We're busy building. If you'd like to stay in the loop, join our waitlist.</p> */}
+            </div>
+
+            <div className="join">
+            <h3><b>Ingin Mendaftar Webinar Terkini?</b></h3>
+                <a href="#form"><button id="call-to-action"><h2>Daftar Sekarang!</h2></button></a>
+                <p>Sebanyak {waitListMembers} orang sudah mendaftar! 🎉</p>
             </div>
 
             <div className="hero-image">
-                <img src={heroImage} width="100%" />
+                <img src={webinarImage} width="100%" />
             </div>
 
             <SocialProof />
 
             <section className="details">
-                <p>If you blog, you know how hard it can be to <span className="highlight"><b>come up with ideas for your next post</b></span>.</p>
-                <p>You want to ask readers for <span className="highlight"><b>ideas and feedback</b></span>, but they come from so many places like Twitter, backlinks, subscriptions, organic traffic.
-                 Your feedback is scattered across many platforms, communities, and comment sections.</p>
+                <p><span className="highlight"><b>Nutrition Amazing Team</b></span> merupakan lorem ipsum dolor sit amet.</p>
+                <p>Lorem ipsum dolor <span className="highlight"><b>sit amet</b></span>,  consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
                 <p>For the price of your afternoon coffee <span className="highlight"><b>(4$/month)</b></span>, we help you navigate the mess and aggregate this insight in a digestible way.</p>
                 <p>We <span className="highlight"><b>save you time and energy</b></span> to do what you do best: <span className="highlight"><b>write</b></span>.</p>
             </section>
 
             <section className="features">
-                <Feature gif={ft1} title="See it all." description="We maintain a comprehensive view of all the various viewership channels so you don't have to." direction="left" />
-                <Feature gif={ft2} title="Take notes." description="Based on viewer feedback, plan out your next blog post." direction="right" />
-                <Feature gif={ft3} title="Schedule posts." description="Post weekly? Monthly? Sporadically? Keep your viewers engaged and excited for your content." direction="left" />
+                <Feature gif={ft1} title="Kegiatan 1" description="We maintain a comprehensive view of all the various viewership channels so you don't have to." direction="left" />
+                <Feature gif={ft2} title="Pelatihan Kesehatan" description="Based on viewer feedback, plan out your next blog post." direction="right" />
+                <Feature gif={ft3} title="Seminar" description="Post weekly? Monthly? Sporadically? Keep your viewers engaged and excited for your content." direction="left" />
             </section>
 
             {/* <section className="features-list">
@@ -58,19 +62,19 @@ export default function Home() {
 
 
             <section id="form" className="form">
-            <h1>The Best Way for Bloggers to.</h1>
+            <h1>Webinar Terkini.</h1>
             <p>The Best Way for Bloggers to.</p>
             <iframe title="Google Form" src="https://docs.google.com/forms/d/e/1FAIpQLSefDyhgfY15PLFCVboPfPYRJGWDmn28DwmaOXApf_icxRT8RQ/viewform?usp=sf_link" frameBorder="0" marginHeight="0" marginWidth="0">Loading…</iframe>
             </section>
 
 
             <section className="built-by">
-                <div style={{ display: "inline-block", verticalAlign: "top" }}>
-                    <Image src="https://lh3.googleusercontent.com/ogw/ADGmqu93xHH49ipW6XONZerMD0I4SqmLydVzD1hfbKzK=s64-c-mo" roundedCircle />
+                <div style={{ display: "inline-block", verticalAlign: "center" }}>
+                    <Image src={avatarImage} roundedCircle />
                 </div>
 
                 <div style={{ display: "inline-block" }} className="built-by-details">
-                    <p>Hi! 👋 &nbsp; I'm <a target="_blank" rel="noopener noreferrer" href="jonathancai.com">Jonathan</a>, and I'm the guy building Panda! Feel free to <a href="mailto:caimjonathan@gmail.com">reach out</a> if you have any questions or concerns.</p>
+                    <p>Made with love by <a target="_blank" rel="noopener noreferrer" href="instagram.com/seutiadji">Setiadji</a>, Contact me at <a href="wa.me/6281220187760">WhatsApp</a> if you have any questions or concerns.</p>
                 </div>
             </section>
 
